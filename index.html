@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Dengue!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Poppins:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/assets/mosquito.png"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="src/js/main.js" defer></script>
+  </head>
+  <body>
+    <div
+      id="mobile-blocker"
+      class="mobile-blocker"
+      role="alert"
+      aria-live="assertive"
+    >
+      <div class="mobile-blocker__content">
+        <h1>Desktop Experience Recommended</h1>
+        <p>
+          Stop Dengue is currently designed for larger screens. Please switch to
+          a desktop or laptop device to continue.
+        </p>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="brand">
+          <span class="badge">
+            <img src="src/assets/mosquito.png" alt="Stop Dengue mosquito" />
+          </span>
+          <span class="brand-title">Stop Dengue!</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#" class="active" data-section="home"><span>🏠</span>Home</a>
+          <a href="#" data-section="about"><span>📘</span>About Dengue</a>
+          <a href="#" data-section="symptoms"><span>❤️</span>Symptoms</a>
+          <a href="#" data-section="prevention"><span>🛡️</span>Prevention</a>
+          <a href="#" data-section="quiz"><span>❓</span>Quiz</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="page page--active home-page"
+        id="home"
+        data-section="home"
+      >
+        <div class="page-anchor" data-anchor="home"></div>
+        <section class="hero">
+          <div class="hero-card">
+            <div class="hero-emoji">
+              <img src="src/assets/mosquito.png" alt="Mosquito illustration" />
+            </div>
+            <h1 class="hero-title">
+              <span class="hero-word hero-word--stop">Stop</span>
+              <span class="hero-word hero-word--dengue">Dengue !</span>
+            </h1>
+            <p class="hero-subtitle">
+              Learn how to prevent dengue fever in a fun and interactive way.
+            </p>
+            <p class="hero-meta">
+              An educational platform for students, families, and communities in
+              Sri Lanka 🇱🇰
+            </p>
+            <div class="hero-actions">
+              <a href="#" class="btn btn-primary" data-section="about"
+                >Start Learning</a
+              >
+              <a href="#" class="btn btn-secondary" data-section="quiz"
+                >Take Quiz</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="section-heading">
+              <h2>What Would You Like to Learn?</h2>
+              <p>
+                Explore each topic to become a dengue prevention expert!
+                Discover symptoms, protection tips, and ways to keep your
+                community safe.
+              </p>
+            </div>
+            <div class="topics-grid">
+              <a href="#" class="topic-card" data-section="about">
+                <h3>About Dengue <span>→</span></h3>
+                <p>Learn what dengue is and how it spreads.</p>
+              </a>
+              <a href="#" class="topic-card" data-section="symptoms">
+                <h3>Symptoms <span>→</span></h3>
+                <p>Recognize the warning signs of dengue fever.</p>
+              </a>
+              <a href="#" class="topic-card" data-section="prevention">
+                <h3>Prevention Tips <span>→</span></h3>
+                <p>Simple steps to protect yourself and others.</p>
+              </a>
+              <a href="#" class="topic-card" data-section="quiz">
+                <h3>Take the Quiz <span>→</span></h3>
+                <p>Test your knowledge about dengue prevention.</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section">
+          <div class="container">
+            <div class="cta-wrapper">
+              <div class="cta-heading">
+                <h3>Together We Can Stop Dengue</h3>
+                <p>
+                  Every small action counts. Learn about dengue and take
+                  preventive measures to protect our families and communities.
+                </p>
+              </div>
+              <div class="action-cards">
+                <div class="action-card">
+                  <div class="action-icon">🧹</div>
+                  <h4>Keep Clean</h4>
+                  <p>Remove stagnant water.</p>
+                </div>
+                <div class="action-card">
+                  <div class="action-icon danger">🛡️</div>
+                  <h4>Stay Protected</h4>
+                  <p>Use repellents &amp; nets.</p>
+                </div>
+                <div class="action-card">
+                  <div class="action-icon info">📣</div>
+                  <h4>Spread Awareness</h4>
+                  <p>Share what you learn.</p>
+                </div>
+              </div>
+              <div class="cta-actions">
+                <a href="#" class="btn btn-primary" data-section="prevention"
+                  >Learn Prevention Tips</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="page about-page" id="about" data-section="about">
+        <div class="page-anchor" data-anchor="about"></div>
+        <div class="container">
+          <header class="about-header">
+            <div>
+              <h1>What is Dengue?</h1>
+            </div>
+            <p class="about-lede">
+              Learn about dengue fever, how it spreads, and why prevention is so
+              important for families and communities in Sri Lanka.
+            </p>
+          </header>
+
+          <div class="about-grid">
+            <article class="info-card info-card--neutral info-card--risk">
+              <header>
+                <span class="card-icon">🧑‍🤝‍🧑</span>
+                <h2>Who is at Risk?</h2>
+              </header>
+              <ul class="card-list">
+                <li>
+                  <span>✔️</span>Everyone can get dengue regardless of age.
+                </li>
+                <li>
+                  <span>👶</span>Children and elders may face stronger symptoms.
+                </li>
+                <li>
+                  <span>♻️</span>People with previous dengue infections risk
+                  severe dengue.
+                </li>
+                <li>
+                  <span>🧳</span>Travelers to high-risk areas need extra
+                  protection.
+                </li>
+              </ul>
+            </article>
+            <section class="about-cta">
+              <div class="cta-text">
+                <h3>Ready to Learn More?</h3>
+                <p>
+                  Explore symptoms, prevention tips, and test your knowledge
+                  with our quiz.
+                </p>
+              </div>
+              <div class="cta-buttons">
+                <a href="#" class="btn btn-primary" data-section="symptoms"
+                  >Learn About Symptoms</a
+                >
+                <a href="#" class="btn btn-success" data-section="prevention"
+                  >Prevention Tips</a
+                >
+              </div>
+            </section>
+            <article class="info-card info-card--warm info-card--understanding">
+              <header>
+                <span class="card-icon">🦟</span>
+                <h2>Understanding Dengue</h2>
+              </header>
+              <p>
+                Dengue is a viral infection spread by
+                <strong>Aedes aegypti</strong> mosquitoes. It causes high
+                fevers, headaches, and severe body aches. In some cases it can
+                become life-threatening, so stopping mosquitoes from breeding is
+                essential.
+              </p>
+              <p class="card-highlight">
+                The best news? Dengue is <strong>100% preventable</strong> when
+                we protect ourselves from mosquito bites.
+              </p>
+            </article>
+
+            <article class="info-card info-card--neutral info-card--spread">
+              <header>
+                <span class="card-icon">🧭</span>
+                <h2>How Does Dengue Spread?</h2>
+              </header>
+              <ul class="card-list">
+                <li>
+                  <span>🌞</span><strong>Daytime biters:</strong> Aedes
+                  mosquitoes are most active early mornings and evenings.
+                </li>
+                <li>
+                  <span>💧</span><strong>Stagnant water:</strong> They lay eggs
+                  in tiny pools like tires, pots, and gutters.
+                </li>
+                <li>
+                  <span>🏠</span><strong>Indoor & outdoor:</strong> They thrive
+                  in homes, schools, and playgrounds.
+                </li>
+                <li>
+                  <span>❌</span><strong>Not person-to-person:</strong> You
+                  cannot catch dengue just by being near someone sick.
+                </li>
+              </ul>
+            </article>
+
+            <article class="info-card info-card--mint info-card--life">
+              <header>
+                <span class="card-icon">🔄</span>
+                <h2>Mosquito Life Cycle</h2>
+              </header>
+              <p>
+                Breaking the mosquito life cycle helps us stop dengue before it
+                spreads. Watch every stage closely so we know where to act.
+              </p>
+              <div class="life-cycle">
+                <img
+                  src="src/assets/Mosquito_Lifecycle.png"
+                  alt="Mosquito life cycle illustration"
+                />
+              </div>
+              <ol class="life-steps">
+                <li><strong>Eggs:</strong> laid on water surfaces.</li>
+                <li><strong>Larvae:</strong> live in water for 7–10 days.</li>
+                <li><strong>Pupae:</strong> transform in just 2–3 days.</li>
+                <li><strong>Adults:</strong> emerge and can spread dengue.</li>
+              </ol>
+              <p class="card-highlight">
+                Remove stagnant water weekly to break the cycle.
+              </p>
+            </article>
+
+            <article class="info-card info-card--neutral info-card--lanka">
+              <header>
+                <span class="card-icon">🌴</span>
+                <h2>Dengue in Sri Lanka</h2>
+              </header>
+              <p>
+                Dengue cases rise during rainy seasons when warm, humid weather
+                allows mosquitoes to multiply. Communities must keep their
+                surroundings clean and clear of water to reduce the risk.
+              </p>
+              <p>
+                Working together, schools and families can keep outbreaks under
+                control.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page symptoms-page" id="symptoms" data-section="symptoms">
+        <div class="page-anchor" data-anchor="symptoms"></div>
+        <div class="container">
+          <header class="symptoms-header">
+            <div class="symptoms-header-icon">🩺</div>
+            <div>
+              <h1>Dengue Symptoms</h1>
+              <p>
+                Learn to recognize the warning signs and know when to seek help.
+                Spot the symptoms early to protect yourself and your loved ones.
+              </p>
+            </div>
+          </header>
+        </div>
+
+        <div class="symptoms-hero">
+          <div class="container">
+            <div class="symptoms-hero-card">
+              <img
+                src="src/assets/Dengue_Symptoms.png"
+                alt="Illustration of dengue symptoms"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container symptoms-stack">
+          <section class="symptom-section symptom-section--common">
+            <header>
+              <div class="section-icon section-icon--peach">🩹</div>
+              <div>
+                <h2>Common Symptoms</h2>
+                <p>
+                  Dengue symptoms usually begin <strong>4–7 days</strong> after
+                  being bitten by an infected mosquito and can last up to a
+                  week.
+                </p>
+              </div>
+            </header>
+            <div class="symptom-grid">
+              <article class="symptom-card">
+                <span>🌡️</span>
+                <h3>High Fever</h3>
+                <p>Sudden high fever (40°C/104°F) that comes on quickly.</p>
+              </article>
+              <article class="symptom-card">
+                <span>🤕</span>
+                <h3>Severe Headache</h3>
+                <p>Intense pain behind the eyes and across the forehead.</p>
+              </article>
+              <article class="symptom-card">
+                <span>🦴</span>
+                <h3>Joint &amp; Muscle Pain</h3>
+                <p>Severe pain in muscles, joints, and even bones.</p>
+              </article>
+              <article class="symptom-card">
+                <span>👀</span>
+                <h3>Pain Behind Eyes</h3>
+                <p>Soreness when moving your eyes or looking around.</p>
+              </article>
+              <article class="symptom-card">
+                <span>🤢</span>
+                <h3>Nausea &amp; Vomiting</h3>
+                <p>Feeling sick, loss of appetite, or frequent vomiting.</p>
+              </article>
+              <article class="symptom-card">
+                <span>🌺</span>
+                <h3>Skin Rash</h3>
+                <p>Small red spots appearing 2–5 days after the fever.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="symptom-section symptom-section--warning">
+            <header>
+              <div class="section-icon section-icon--warning">⚠️</div>
+              <div>
+                <h2>Warning Signs – Seek Medical Help Immediately!</h2>
+                <p>
+                  These symptoms can indicate <strong>severe dengue</strong>,
+                  which is a medical emergency.
+                </p>
+              </div>
+            </header>
+            <ul class="warning-list">
+              <li>
+                <span>🩸</span>
+                <div>
+                  <strong>Severe abdominal pain</strong> or persistent vomiting
+                </div>
+              </li>
+              <li>
+                <span>🩹</span>
+                <div>
+                  <strong>Bleeding</strong> from nose, gums, or in vomit/stool
+                </div>
+              </li>
+              <li>
+                <span>😮‍💨</span>
+                <div>
+                  <strong>Difficulty breathing</strong> or rapid breathing
+                </div>
+              </li>
+              <li>
+                <span>💧</span>
+                <div>
+                  <strong>Fluid accumulation</strong> in chest or abdomen
+                </div>
+              </li>
+              <li>
+                <span>😴</span>
+                <div>
+                  <strong>Lethargy</strong>, restlessness, or extreme fatigue
+                </div>
+              </li>
+              <li>
+                <span>🥶</span>
+                <div>
+                  <strong>Cold or clammy skin</strong> or sudden dizziness
+                </div>
+              </li>
+            </ul>
+            <div class="warning-callout">
+              <span>🏥</span>
+              If you notice any of these warning signs, go to a hospital
+              immediately!
+            </div>
+          </section>
+
+          <section class="symptom-section symptom-section--action">
+            <header>
+              <div class="section-icon section-icon--mint">💚</div>
+              <div>
+                <h2>What Should You Do?</h2>
+                <p>
+                  If you think you have dengue, follow these steps right away.
+                </p>
+              </div>
+            </header>
+            <ol class="action-list">
+              <li>
+                Visit a doctor quickly for proper diagnosis and treatment.
+              </li>
+              <li>
+                Rest and drink plenty of fluids (water, coconut water, ORS).
+              </li>
+              <li>Take paracetamol for fever (avoid aspirin or ibuprofen).</li>
+              <li>Monitor symptoms closely and watch for warning signs.</li>
+              <li>Prevent mosquito bites to stop spreading the virus.</li>
+              <li>Follow your doctor's instructions carefully.</li>
+            </ol>
+            <aside class="action-note">
+              <div class="note-icon">💡</div>
+              <p>
+                There is no specific medicine for dengue, but with early
+                detection and proper medical care most people recover fully
+                within two weeks.
+              </p>
+            </aside>
+          </section>
+
+          <section class="symptom-section symptom-section--tips">
+            <header>
+              <div class="section-icon section-icon--cream">🌿</div>
+              <div>
+                <h2>Recovery Tips</h2>
+                <p>Take care of your body as it heals from dengue.</p>
+              </div>
+            </header>
+            <ul class="tip-list">
+              <li>Get plenty of rest and sleep.</li>
+              <li>Drink lots of fluids to prevent dehydration.</li>
+              <li>Eat nutritious, easy-to-digest foods.</li>
+              <li>Use mosquito nets while resting.</li>
+              <li>Avoid strenuous activities until fully recovered.</li>
+              <li>Complete all prescribed medications.</li>
+              <li>Attend all follow-up appointments.</li>
+            </ul>
+          </section>
+
+          <section class="symptom-section symptom-section--cta">
+            <div class="cta-content">
+              <div>
+                <h2>Prevention is Better Than Cure!</h2>
+                <p>
+                  Learn how to protect yourself and your family from dengue.
+                </p>
+              </div>
+              <a href="#" class="btn btn-success" data-section="prevention"
+                >Learn Prevention Tips</a
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section
+        class="page prevention-page"
+        id="prevention"
+        data-section="prevention"
+      >
+        <div class="page-anchor" data-anchor="prevention"></div>
+        <section class="prevention-hero">
+          <div class="container">
+            <div class="prevention-hero-heading">
+              <h1>Prevention Tips</h1>
+              <p>
+                Simple steps to protect yourself and your community from dengue.
+              </p>
+            </div>
+            <div class="prevention-hero-card">
+              <img
+                src="src/assets/Prevention_Tips.png"
+                alt="Illustrated dengue prevention poster"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="prevention-callout">
+          <div class="container">
+            <div class="prevention-callout-card">
+              <span class="callout-icon">✨</span>
+              <div>
+                <h2>Remember: Prevention is 100% Possible!</h2>
+                <p>
+                  By following these simple steps, we can eliminate mosquito
+                  breeding sites and protect ourselves from bites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="prevention-section prevention-section--water">
+          <div class="container">
+            <header class="prevention-section-header">
+              <div class="section-icon section-icon--mint">💧</div>
+              <div>
+                <h2>Remove Stagnant Water</h2>
+                <p>
+                  Mosquitoes need water to breed. Remove all standing water
+                  sources.
+                </p>
+              </div>
+            </header>
+            <div class="prevention-grid prevention-grid--four">
+              <article class="prevention-card prevention-card--indoor">
+                <h3>Indoor Containers</h3>
+                <ul>
+                  <li>Empty flower vases weekly</li>
+                  <li>Clean water storage containers</li>
+                  <li>Cover water tanks tightly</li>
+                  <li>Check under sinks and bathrooms</li>
+                </ul>
+              </article>
+              <article class="prevention-card prevention-card--outdoor">
+                <h3>Outdoor Areas</h3>
+                <ul>
+                  <li>Empty old tires and bottles</li>
+                  <li>Clean roof gutters regularly</li>
+                  <li>Remove water from plant pots</li>
+                  <li>Fill tree holes with sand</li>
+                </ul>
+              </article>
+              <article class="prevention-card prevention-card--garden">
+                <h3>Garden Items</h3>
+                <ul>
+                  <li>Turn buckets upside down</li>
+                  <li>Store gardening tools properly</li>
+                  <li>Change pet water bowls daily</li>
+                  <li>Clean bird baths frequently</li>
+                </ul>
+              </article>
+              <article class="prevention-card prevention-card--waste">
+                <h3>Waste Management</h3>
+                <ul>
+                  <li>Dispose of trash properly</li>
+                  <li>Cover garbage bins tightly</li>
+                  <li>Don't let water collect in cans</li>
+                  <li>Recycle or remove old items</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="prevention-section prevention-section--bites">
+          <div class="container">
+            <header class="prevention-section-header">
+              <div class="section-icon section-icon--peach">🛡️</div>
+              <div>
+                <h2>Protect Yourself from Bites</h2>
+                <p>
+                  Stay safe by combining protective clothing, repellents, and
+                  home safety.
+                </p>
+              </div>
+            </header>
+            <div class="prevention-grid prevention-grid--three">
+              <article class="prevention-card prevention-card--stacked">
+                <h3>Wear Protective Clothing</h3>
+                <ul>
+                  <li>Long-sleeved shirts and long pants</li>
+                  <li>
+                    Light-colored clothing (mosquitoes prefer dark colors)
+                  </li>
+                  <li>Covered shoes and socks</li>
+                  <li>
+                    Dress carefully during peak biting hours (morning & evening)
+                  </li>
+                </ul>
+              </article>
+              <article class="prevention-card prevention-card--stacked">
+                <h3>Use Mosquito Repellents</h3>
+                <ul>
+                  <li>Use mosquito coils or electric repellents indoors</li>
+                  <li>Reapply repellent every few hours</li>
+                  <li>Choose child-safe repellents for kids</li>
+                  <li>Follow instructions on repellents carefully</li>
+                </ul>
+              </article>
+              <article class="prevention-card prevention-card--stacked">
+                <h3>Protect Your Home</h3>
+                <ul>
+                  <li>Install window and door screens</li>
+                  <li>Use mosquito nets while sleeping</li>
+                  <li>Use air conditioning when possible</li>
+                  <li>Keep windows and doors closed at dawn and dusk</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="prevention-section prevention-section--community">
+          <div class="container">
+            <header class="prevention-section-header">
+              <div class="section-icon section-icon--mint">🤝</div>
+              <div>
+                <h2>Community Action</h2>
+                <p>
+                  Dengue prevention works best when the whole community
+                  participates.
+                </p>
+              </div>
+            </header>
+            <div class="prevention-grid prevention-grid--two">
+              <article class="prevention-card">
+                <h3>Neighborhood Clean-up</h3>
+                <p>
+                  Organize community clean-up drives to remove breeding sites in
+                  common areas, parks, and public spaces.
+                </p>
+              </article>
+              <article class="prevention-card">
+                <h3>School Awareness</h3>
+                <p>
+                  Teach students about dengue prevention. Check school premises
+                  for mosquito breeding sites weekly.
+                </p>
+              </article>
+              <article class="prevention-card">
+                <h3>Spread the Word</h3>
+                <p>
+                  Share prevention tips with family, friends, and neighbors.
+                  Everyone's participation makes a difference!
+                </p>
+              </article>
+              <article class="prevention-card">
+                <h3>Work Together</h3>
+                <p>
+                  Coordinate with local health authorities for fogging and
+                  awareness campaigns in your area.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="prevention-section prevention-section--checklist">
+          <div class="container">
+            <header class="prevention-section-header">
+              <div class="section-icon section-icon--cream">🗓️</div>
+              <div>
+                <h2>Weekly Prevention Checklist</h2>
+                <p>Keep dengue away with a quick weekly routine.</p>
+              </div>
+            </header>
+            <div class="checklist-card">
+              <h3>Do This Every Week:</h3>
+              <ul>
+                <li>Check all water containers and empty if necessary</li>
+                <li>Clean flower vases and change water</li>
+                <li>Inspect outdoor areas for stagnant water</li>
+                <li>Cover water storage tanks properly</li>
+                <li>Dispose of trash and recyclables</li>
+                <li>Check for and repair any leaking pipes</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="prevention-cta">
+          <div class="container">
+            <div class="prevention-cta-card">
+              <div>
+                <h2>Test Your Knowledge!</h2>
+                <p>
+                  See how much you've learned about dengue prevention with our
+                  interactive quiz.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary" data-section="quiz"
+                >Take the Quiz</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="page quiz-page" data-section="quiz" aria-hidden="true">
+        <div class="container quiz-wrapper">
+          <header class="quiz-status-card">
+            <div class="quiz-status-row">
+              <p class="quiz-step">
+                Question
+                <span id="quiz-current">1</span>
+                of
+                <span id="quiz-total">8</span>
+              </p>
+              <p class="quiz-score">
+                Score:
+                <span id="quiz-score">0</span>/<span id="quiz-asked">0</span>
+              </p>
+            </div>
+            <div class="quiz-progress-track" aria-hidden="true">
+              <div
+                class="quiz-progress-fill"
+                id="quiz-progress"
+                style="width: 0%"
+              ></div>
+            </div>
+          </header>
+
+          <article class="quiz-card" data-view="question">
+            <h1 class="quiz-question" id="quiz-question">
+              Which mosquito spreads dengue fever?
+            </h1>
+            <div
+              class="quiz-options"
+              id="quiz-options"
+              role="group"
+              aria-labelledby="quiz-question"
+            ></div>
+            <div class="quiz-explanation" id="quiz-explanation" hidden>
+              <strong>Explanation:</strong>
+              <span id="quiz-explanation-text"></span>
+            </div>
+          </article>
+          <button
+            type="button"
+            class="btn btn-success quiz-next is-hidden"
+            id="quiz-next"
+          >
+            Next Question
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <div class="footer-brand">
+              <span>
+                <img src="src/assets/mosquito.png" alt="Stop Dengue logo" />
+              </span>
+              Stop Dengue!
+            </div>
+            <p>
+              An interactive educational platform teaching children and families
+              about dengue prevention in Sri Lanka.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="#" data-section="about">About Dengue</a>
+            <a href="#" data-section="symptoms">Symptoms</a>
+            <a href="#" data-section="prevention">Prevention Tips</a>
+            <a href="#" data-section="quiz">Test Your Knowledge</a>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <a
+              href="https://www.who.int"
+              target="_blank"
+              rel="noopener noreferrer"
+              >WHO Dengue Info</a
+            >
+            <a
+              href="https://www.health.gov.lk"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ministry of Health, Sri Lanka</a
+            >
+            <a
+              href="https://www.cdc.gov/dengue"
+              target="_blank"
+              rel="noopener noreferrer"
+              >CDC Dengue Guidelines</a
+            >
+          </div>
+          <div class="footer-col">
+            <h4>Stay Alert</h4>
+            <p>Keep your community safe and informed.</p>
+            <p>Report mosquito breeding sites to local health officers.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Made by Ravindu Karunarathne
+            <br>© 2025 Stop Dengue Initiative.
+            Educational purposes only.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
